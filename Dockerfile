@@ -1,5 +1,5 @@
 FROM python:3.9-alpine3.13
-LABEL maintainer="juniejohn@gmail.com"
+LABEL maintainer="johnjunie35@gmail.com"
 
 ENV PYTHONUNBUFFERED 1
 
@@ -25,7 +25,7 @@ RUN python -m venv /py && \
         --disabled-password \
         --no-create-home \
         django-user
-RUN pip3 install flake8
+
 
 ENV PATH="/py/bin:$PATH"
 
